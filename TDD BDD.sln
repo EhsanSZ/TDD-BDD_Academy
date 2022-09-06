@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp111", "ConsoleApp111\ConsoleApp111.csproj", "{4AC222F8-EEF0-4959-92BD-433C84CF1A73}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example", "Example", "{0136E411-65D9-4487-BC69-EC4E45C54F65}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1", "1", "{09AED7B1-19A9-48BD-9C2B-EC2DA3F4AA8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "FizzBuzz\FizzBuzz.csproj", "{579F98B2-B0A1-4EF8-9E5B-881170E8F934}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +15,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4AC222F8-EEF0-4959-92BD-433C84CF1A73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4AC222F8-EEF0-4959-92BD-433C84CF1A73}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4AC222F8-EEF0-4959-92BD-433C84CF1A73}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4AC222F8-EEF0-4959-92BD-433C84CF1A73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{579F98B2-B0A1-4EF8-9E5B-881170E8F934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{579F98B2-B0A1-4EF8-9E5B-881170E8F934}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{579F98B2-B0A1-4EF8-9E5B-881170E8F934}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{579F98B2-B0A1-4EF8-9E5B-881170E8F934}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{09AED7B1-19A9-48BD-9C2B-EC2DA3F4AA8A} = {0136E411-65D9-4487-BC69-EC4E45C54F65}
+		{579F98B2-B0A1-4EF8-9E5B-881170E8F934} = {09AED7B1-19A9-48BD-9C2B-EC2DA3F4AA8A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0D961F37-5D7F-4850-9BA1-71452AE90234}
