@@ -8,9 +8,14 @@
     },
     "4680a80b-54af-4aa4-bf9e-42bf06f4d229": {
       "ProjectGuid": "4680a80b-54af-4aa4-bf9e-42bf06f4d229",
-      "DisplayName": "EvenOrOdd",
+      "DisplayName": "FizzBuzz",
       "ColorIndex": 1
+    },
+    "579f98b2-b0a1-4ef8-9e5b-881170e8f934": {
+      "ProjectGuid": "579f98b2-b0a1-4ef8-9e5b-881170e8f934",
+      "DisplayName": "FizzBuzz",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 3
 }
