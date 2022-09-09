@@ -15,7 +15,12 @@
       "ProjectGuid": "579f98b2-b0a1-4ef8-9e5b-881170e8f934",
       "DisplayName": "FizzBuzz",
       "ColorIndex": 2
+    },
+    "fc4c05a4-ff5d-4860-97ab-3998b72147fe": {
+      "ProjectGuid": "fc4c05a4-ff5d-4860-97ab-3998b72147fe",
+      "DisplayName": "Academy.Domain.Tests",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }
