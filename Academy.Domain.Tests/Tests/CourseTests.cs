@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Academy.Domain.Tests.Builders;
+using FluentAssertions;
+using System;
 using Xunit;
 
 namespace Academy.Domain.Tests.Tests
@@ -12,43 +14,40 @@ namespace Academy.Domain.Tests.Tests
             const string name = "tdd & bdd";
             const bool isOnline = true;
             const double tuition = 600;
-            const string instructor = "hossein";
+            const string instructor = "Ehsan";
 
-            var course = new Course( id , name , isOnline , tuition , instructor);
+            var courseBuilder = new CourseTestBuilder();
 
-            Assert.Equal(id, course.Id);
-            Assert.Equal(name, course.Name);
-            Assert.Equal(isOnline, course.IsOnline);
-            Assert.Equal(tuition, course.Tuition);
-            Assert.Equal(instructor, course.Instructor);
+            var course = courseBuilder.Build();
+
+            course.Id.Should().Be(id);
+            course.Name.Should().Be(name);
+            course.IsOnline.Should().Be(isOnline);
+            course.Tuition.Should().Be(tuition);
+            course.Instructor.Should().Be(instructor);
+
         }
 
         [Fact]
         public void Constructor_ShouldThrowException_WhenNameIsNotProvided()
         {
-            const int id = 1;
-            const string name = "";
-            const bool isOnline = true;
-            const double tuition = 240;
-            const string instructor = "hossein";
+            var courseBulider = new CourseTestBuilder();
 
-            void course() => new Course(id, name, isOnline, tuition, instructor);
+            Action course = () => courseBulider.WithName("").Build();
 
-            Assert.Throws<Exception>(course);
+            course.Should().Throw<Exception>();
+
         }
 
         [Fact]
         public void Constructor_ShouldThrowException_WhenTuitionIsNotProvided()
         {
-            const int id = 1;
-            const string name = "tdd & bdd";
-            const bool isOnline = true;
-            const double tuition = 0;
-            const string instructor = "hossein";
 
-            void course() => new Course(id, name, isOnline, tuition, instructor);
+            var courseBulider = new CourseTestBuilder();
 
-            Assert.Throws<Exception>(course);
+            Action course = () => courseBulider.WithTuition(0).Build();
+
+            course.Should().Throw<Exception>();
         }
     }
 

@@ -20,7 +20,12 @@
       "ProjectGuid": "fc4c05a4-ff5d-4860-97ab-3998b72147fe",
       "DisplayName": "Academy.Domain.Tests",
       "ColorIndex": 3
+    },
+    "6b0f055e-dbb4-4a73-a25e-bb31ec460483": {
+      "ProjectGuid": "6b0f055e-dbb4-4a73-a25e-bb31ec460483",
+      "DisplayName": "Academy.Domain",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 5
 }
