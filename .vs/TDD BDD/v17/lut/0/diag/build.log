@@ -1,0 +1,47 @@
+[18:49:37.176 Verbose] - BuildManager - D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Domain.Tests\Tests\SectionTests.cs(1,28): error CS0234: The type or namespace name 'CollectionFixtures' does not exist in the namespace 'Academy.Domain.Tests' (are you missing an assembly reference?)
+[18:49:37.177 Verbose] - BuildManager - D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Domain.Tests\Tests\CourseTests.cs(60,26): error CS0103: The name '_courseBuilder' does not exist in the current context
+[18:49:37.177 Verbose] - BuildManager - C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\Roslyn\Microsoft.CSharp.Core.targets(75,5): error MSB4181: The "Csc" task returned false but did not log an error.
+[18:49:37.187 Verbose] - BuildManager - Some of the file paths defined in the csproj under the Live Unit Testing build path are missing. Verify whether these files should be present under the Live Unit Testing build path and if necessary update the csproj definition to look these files up in a different place.
+[18:49:37.188 Verbose] - BuildManager - Item _OutputPathItem 'D:\MyProje\ASP.Net\TDD\TDD BDD\.vs\TDD BDD\v17\lut\0\b\Academy.Domain.Tests\Debug\net5.0\' evaluated via:
+_OutputPathItem: '$(OutDir)' @ C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets:310
+  OutDir: '$(OutputPath)' @ C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets:228
+    OutputPath: '$(OutputPath)$(TargetFramework.ToLowerInvariant())\' @ C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets:245
+      OutputPath: '$(BaseOutputPath)$(Configuration)\' @ C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets:33
+        BaseOutputPath: 'D:\MyProje\ASP.Net\TDD\TDD BDD\.vs\TDD BDD\v17\lut\0\b\Academy.Domain.Tests\' @ D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Domain.Tests\Academy.Domain.Tests.csproj:0
+        Configuration: 'Debug'
+[18:49:37.372 Verbose] - BuildManager - Item AppConfigFileDestination 'D:\MyProje\ASP.Net\TDD\TDD BDD\.vs\TDD BDD\v17\lut\0\b\Academy.Domain.Tests\Debug\net5.0\Academy.Domain.Tests.dll.config' evaluated via:
+AppConfigFileDestination: '$(OutDir)$(TargetFileName).config' @ C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets:338
+  OutDir: '$(OutputPath)' @ C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets:228
+    OutputPath: '$(OutputPath)$(TargetFramework.ToLowerInvariant())\' @ C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets:245
+      OutputPath: '$(BaseOutputPath)$(Configuration)\' @ C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets:33
+        BaseOutputPath: 'D:\MyProje\ASP.Net\TDD\TDD BDD\.vs\TDD BDD\v17\lut\0\b\Academy.Domain.Tests\' @ D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Domain.Tests\Academy.Domain.Tests.csproj:0
+        Configuration: 'Debug'
+  TargetFileName: '$(TargetName)$(TargetExt)' @ C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets:248
+    TargetName: '$(AssemblyName)' @ C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets:240
+      AssemblyName: '$(MSBuildProjectName)' @ C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.props:32
+        MSBuildProjectName: 'Academy.Domain.Tests'
+    TargetExt: '.dll' @ C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.BeforeCommon.targets:106
+[18:49:37.372 Verbose] - BuildManager - Item CreateDirectory 'D:\MyProje\ASP.Net\TDD\TDD BDD\.vs\TDD BDD\v17\lut\0\b\Academy.Domain.Tests\Debug\net5.0\ref' evaluated via:
+CreateDirectory: '$(OutDir)ref' @ C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets:398
+  OutDir: '$(OutputPath)' @ C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets:228
+    OutputPath: '$(OutputPath)$(TargetFramework.ToLowerInvariant())\' @ C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets:245
+      OutputPath: '$(BaseOutputPath)$(Configuration)\' @ C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets:33
+        BaseOutputPath: 'D:\MyProje\ASP.Net\TDD\TDD BDD\.vs\TDD BDD\v17\lut\0\b\Academy.Domain.Tests\' @ D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Domain.Tests\Academy.Domain.Tests.csproj:0
+        Configuration: 'Debug'
+[18:49:37.373 Verbose] - BuildManager - Item _DebugSymbolsOutputPath 'D:\MyProje\ASP.Net\TDD\TDD BDD\.vs\TDD BDD\v17\lut\0\b\Academy.Domain.Tests\Debug\net5.0\Academy.Domain.Tests.pdb' evaluated via:
+_DebugSymbolsOutputPath: '@(_DebugSymbolsIntermediatePath->'$(OutDir)%(Filename)%(Extension)')' @ C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets:404
+  OutDir: '$(OutputPath)' @ C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets:228
+    OutputPath: '$(OutputPath)$(TargetFramework.ToLowerInvariant())\' @ C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets:245
+      OutputPath: '$(BaseOutputPath)$(Configuration)\' @ C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets:33
+        BaseOutputPath: 'D:\MyProje\ASP.Net\TDD\TDD BDD\.vs\TDD BDD\v17\lut\0\b\Academy.Domain.Tests\' @ D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Domain.Tests\Academy.Domain.Tests.csproj:0
+        Configuration: 'Debug'
+[18:49:37.373 Verbose] - BuildManager - Item _ApplicationManifestFinal 'D:\MyProje\ASP.Net\TDD\TDD BDD\.vs\TDD BDD\v17\lut\0\b\Academy.Domain.Tests\Debug\net5.0\Native.Academy.Domain.Tests.manifest' evaluated via:
+_ApplicationManifestFinal: '$(OutDir)$(_DeploymentTargetApplicationManifestFileName)' @ C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets:442
+  OutDir: '$(OutputPath)' @ C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets:228
+    OutputPath: '$(OutputPath)$(TargetFramework.ToLowerInvariant())\' @ C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets:245
+      OutputPath: '$(BaseOutputPath)$(Configuration)\' @ C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets:33
+        BaseOutputPath: 'D:\MyProje\ASP.Net\TDD\TDD BDD\.vs\TDD BDD\v17\lut\0\b\Academy.Domain.Tests\' @ D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Domain.Tests\Academy.Domain.Tests.csproj:0
+        Configuration: 'Debug'
+  _DeploymentTargetApplicationManifestFileName: 'Native.$(AssemblyName).manifest' @ C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets:264
+    AssemblyName: '$(MSBuildProjectName)' @ C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.props:32
+      MSBuildProjectName: 'Academy.Domain.Tests'

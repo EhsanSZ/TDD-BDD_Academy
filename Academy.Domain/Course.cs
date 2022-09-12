@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Academy.Domain.Exceptions;
+using System;
+using System.Collections.Generic;
 
 namespace Academy.Domain
 {
@@ -9,6 +11,7 @@ namespace Academy.Domain
         public bool IsOnline { get; set; }
         public double Tuition { get; set; }
         public string Instructor { get; set; }
+        public List<Section> Sections { get; set; }
 
         public Course(int id, string name, bool isOnline, double tuition, string instructor)
         {
@@ -20,18 +23,24 @@ namespace Academy.Domain
             IsOnline = isOnline;
             Tuition = tuition;
             Instructor = instructor;
+            Sections = new List<Section>();
         }
 
         private static void GuardAgainstInvalidName(string name)
         {
             if (string.IsNullOrWhiteSpace(name))
-                throw new Exception();
+                throw new CourseNameIsInvalidException();
         }
 
         private static void GuardAgainstInvalidTuition(double tuition)
         {
             if (tuition <= 0)
-                throw new Exception();
+                throw new CourseTuitionIsInvalidException();
+        }
+
+        public void AddSection(Section section)
+        {
+            Sections.Add(section);
         }
     }
 }
