@@ -10,6 +10,7 @@ namespace Academy.Domain.Tests.Tests
         public SectionTests(DatabaseFixture databaseFixture)
         {
         }
+
         [Fact]
         public void Constructor_Should_Construct_Section_Properly()
         {

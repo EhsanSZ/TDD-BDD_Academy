@@ -2,11 +2,17 @@
 {
     public class CourseTestBuilder
     {
-        private const int Id = 1;
+        private int Id = 1;
         private string _name = "tdd & bdd";
         private const bool IsOnline = true;
         private double _tuition = 600;
         private const string Instructor = "Ehsan";
+
+        public CourseTestBuilder WithId(int id)
+        {
+            Id = id;
+            return this;
+        }
 
         public CourseTestBuilder WithName(string name)
         {

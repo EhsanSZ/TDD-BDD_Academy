@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Academy.Infrastructure/1.0.0": {
+        "dependencies": {
+          "Academy.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Academy.Infrastructure.dll": {}
+        }
+      },
+      "Academy.Domain/1.0.0": {
+        "runtime": {
+          "Academy.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Academy.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Academy.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
