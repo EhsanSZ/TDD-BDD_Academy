@@ -1,0 +1,17 @@
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application\bin\Debug\net5.0\Academy.Application.deps.json
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application\bin\Debug\net5.0\Academy.Application.dll
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application\bin\Debug\net5.0\ref\Academy.Application.dll
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application\bin\Debug\net5.0\Academy.Application.pdb
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application\bin\Debug\net5.0\Academy.Domain.dll
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application\bin\Debug\net5.0\Academy.Infrastructure.dll
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application\bin\Debug\net5.0\Academy.Domain.pdb
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application\bin\Debug\net5.0\Academy.Infrastructure.pdb
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application\obj\Debug\net5.0\Academy.Application.csproj.AssemblyReference.cache
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application\obj\Debug\net5.0\Academy.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application\obj\Debug\net5.0\Academy.Application.AssemblyInfoInputs.cache
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application\obj\Debug\net5.0\Academy.Application.AssemblyInfo.cs
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application\obj\Debug\net5.0\Academy.Application.csproj.CoreCompileInputs.cache
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application\obj\Debug\net5.0\Academy.Application.csproj.CopyComplete
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application\obj\Debug\net5.0\Academy.Application.dll
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application\obj\Debug\net5.0\ref\Academy.Application.dll
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application\obj\Debug\net5.0\Academy.Application.pdb
