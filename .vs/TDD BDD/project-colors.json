@@ -45,7 +45,17 @@
       "ProjectGuid": "8e557643-3c6d-4b50-804f-cbcf56bf04d1",
       "DisplayName": "Academy.Infrastructure.Tests.Unit",
       "ColorIndex": 7
+    },
+    "e7836e52-a9cb-4355-ae30-009dafbfc69d": {
+      "ProjectGuid": "e7836e52-a9cb-4355-ae30-009dafbfc69d",
+      "DisplayName": "Academy.Application.Tests.Unit",
+      "ColorIndex": 8
+    },
+    "eda00449-9bcf-4fff-9f5e-8ca848be5420": {
+      "ProjectGuid": "eda00449-9bcf-4fff-9f5e-8ca848be5420",
+      "DisplayName": "Academy.Application",
+      "ColorIndex": 9
     }
   },
-  "NextColorIndex": 8
+  "NextColorIndex": 10
 }

@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Academy.Infrastructure
 {
-    public class CourseRepository
+    public class CourseRepository : ICourseRepository
     {
         public List<Course> Courses = new List<Course>
         {
@@ -32,6 +32,11 @@ namespace Academy.Infrastructure
             var course = GetBy(id);
 
             Courses.Remove(course);
+        }
+
+        public Course GetBy(string name)
+        {
+            return Courses.FirstOrDefault(x=> x.Name == name);
         }
     }
 }

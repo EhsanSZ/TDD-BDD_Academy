@@ -112,3 +112,9 @@ D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application.Tests.Unit\obj\Debug\net5.0\A
 D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application.Tests.Unit\obj\Debug\net5.0\ref\Academy.Application.Tests.Unit.dll
 D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application.Tests.Unit\obj\Debug\net5.0\Academy.Application.Tests.Unit.pdb
 D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application.Tests.Unit\obj\Debug\net5.0\Academy.Application.Tests.Unit.genruntimeconfig.cache
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application.Tests.Unit\bin\Debug\net5.0\Castle.Core.dll
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application.Tests.Unit\bin\Debug\net5.0\NSubstitute.dll
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application.Tests.Unit\bin\Debug\net5.0\System.Diagnostics.EventLog.dll
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application.Tests.Unit\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.EventLog.dll
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application.Tests.Unit\bin\Debug\net5.0\Academy.Application.dll
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application.Tests.Unit\bin\Debug\net5.0\Academy.Application.pdb

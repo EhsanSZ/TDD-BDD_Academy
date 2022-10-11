@@ -54,6 +54,7 @@ namespace Academy.Infrastructure.Tests.Unit
             actual.Should().Be(expectedCourse);
         }
 
+
         [Fact]
         public void Should_ReturnNull_WhenIdNotExist()
         {
@@ -83,6 +84,36 @@ namespace Academy.Infrastructure.Tests.Unit
 
             //البته بهتر بود خروجی بولین بگیری و چک کنی
         }
+
+        [Fact]
+        public void Should_ReturnCourseByName()
+        {
+            //arrange
+            const string WebDesign = "WebDesign";
+            var expectedCourse = _courseTestBuilder.WithName(WebDesign).Build();
+            _courseRepository.Create(expectedCourse);
+
+            //act
+            var actual = _courseRepository.GetBy(WebDesign);
+
+            //assert
+            //actual.Name.Should().Be(WebDesign);
+            expectedCourse.Should().Be(actual);
+        }
+
+        [Fact]
+        public void Should_ReturnNull_WhenNameNotExist()
+        {
+            //arrange
+            const string DDD = "DDD";
+
+            //act
+            var actual = _courseRepository.GetBy(DDD);
+
+            //assert
+            actual.Should().BeNull();
+        }
+
     }
 
 }

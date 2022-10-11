@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "TIgjKn+WqAcBt5oZBUPS2YtpiLGOwoqafzq7xQaSU9yov5DaxBX2HXcPesbj9hAloWjCtfToppJ4tuMj0V1eqQ==",
+  "dgSpecHash": "+HSwR2eg3FME7mQncTWAltdP+j8k6s3nhAidhH+ymBHVCeWzzPxFfqaYPqxLDOSztwkUEaJBV5aACiBCpvBWtQ==",
   "success": true,
   "projectFilePath": "D:\\MyProje\\ASP.Net\\TDD\\TDD BDD\\Academy.Application\\Academy.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Ehsan\\.nuget\\packages\\faker.net\\2.0.154\\faker.net.2.0.154.nupkg.sha512",
+    "C:\\Users\\Ehsan\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Ehsan\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Ehsan\\.nuget\\packages\\tynamix.objectfiller\\1.5.8\\tynamix.objectfiller.1.5.8.nupkg.sha512"
+  ],
   "logs": []
 }
