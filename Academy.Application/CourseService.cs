@@ -29,5 +29,26 @@ namespace Academy.Application
             return course.Id;
 
         }
+
+        public void Edit(EditCourse command)
+        {
+            if (_courseRepository.GetBy(command.Id) == null)
+                throw new CourseNotExistsException();
+
+            _courseRepository.Delete(command.Id);
+            var course = new Course(command.Id, command.Name, command.IsOnline,
+                command.Tuition, command.Instructor);
+            _courseRepository.Create(course);
+        }
+
+        public void Delete(int id)
+        {
+            _courseRepository.Delete(id);
+        }
+
+        public List<Course> GetAll()
+        {
+            return _courseRepository.GetAll();
+        }
     }
 }

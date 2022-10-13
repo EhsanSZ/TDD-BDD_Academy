@@ -118,3 +118,6 @@ D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application.Tests.Unit\bin\Debug\net5.0\S
 D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application.Tests.Unit\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.EventLog.dll
 D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application.Tests.Unit\bin\Debug\net5.0\Academy.Application.dll
 D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application.Tests.Unit\bin\Debug\net5.0\Academy.Application.pdb
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application.Tests.Unit\bin\Debug\net5.0\Faker.Net.5.0.dll
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application.Tests.Unit\bin\Debug\net5.0\Tynamix.ObjectFiller.dll
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Application.Tests.Unit\bin\Debug\net5.0\de-DE\Faker.Net.5.0.resources.dll

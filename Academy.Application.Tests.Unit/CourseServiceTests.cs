@@ -4,7 +4,9 @@ using Academy.Domain.Tests.Builders;
 using Faker;
 using FluentAssertions;
 using NSubstitute;
+using NSubstitute.ReturnsExtensions;
 using System;
+using System.Collections.Generic;
 using Tynamix.ObjectFiller;
 using Xunit;
 
@@ -40,15 +42,6 @@ namespace Academy.Application.Tests.Unit
 
         private static CreateCourse SomeCreateCourse()
         {
-            //return new CreateCourse()
-            // {
-            //     Id = 30,
-            //     IsOnline = true,
-            //     Name = "C#",
-            //     Instructor = Name.FullName(), => Faker.Net
-            //     Tuition = 300
-            // };
-
             var filler = new Filler<CreateCourse>();
             filler.Setup().OnProperty(x => x.Tuition).Use(780);
             return filler.Create();
@@ -82,6 +75,81 @@ namespace Academy.Application.Tests.Unit
             //assert
             actual.Should().Throw<DuplicatedCourseNameException>();
 
+        }
+
+        [Fact]
+        public void Should_UpdateCourse()
+        {
+            //arrange
+            var command = SomeEditCourse();
+            var course = _courseTestBuilder.Build();
+            _courseRepository.GetBy(command.Id).Returns(course);
+
+            //act
+            _courseService.Edit(command);
+
+            //assert
+            Received.InOrder(() =>
+            {
+                _courseRepository.Delete(command.Id);
+                _courseRepository.Create(Arg.Any<Course>());
+            });
+        }
+
+
+        [Fact]
+        public void Should_ThrowException_WhenUpdatingCourseNotExists()
+        {
+            //arrange
+            var command = SomeEditCourse();
+            _courseRepository.GetBy(command.Id).ReturnsNull();
+
+            //act
+            Action action = () => _courseService.Edit(command);
+
+            //assert
+            action.Should().Throw<CourseNotExistsException>();
+        }
+
+
+        private static EditCourse SomeEditCourse()
+        {
+            return new EditCourse
+            {
+                Id = 12,
+                IsOnline = true,
+                Instructor = Name.FullName(),
+                Name = "ASP",
+                Tuition = 200
+            };
+        }
+
+        [Fact]
+        public void Should_DeleteCourse()
+        {
+            //arrange
+            const int id = 57;
+
+            //act
+            _courseService.Delete(id);
+
+            //assert
+            _courseRepository.Received().Delete(id);
+        }
+
+
+        [Fact]
+        public void Should_ReturnListOfCourse()
+        {
+            //arrange
+            _courseRepository.GetAll().Returns(new List<Course>());
+
+            //act
+            var courses = _courseService.GetAll();
+
+            //assert
+            courses.Should().BeOfType<List<Course>>();
+            _courseRepository.Received().GetAll();
         }
 
     }
