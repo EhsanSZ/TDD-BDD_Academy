@@ -2,6 +2,7 @@ D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Domain\bin\Debug\net5.0\Academy.Domain.de
 D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Domain\bin\Debug\net5.0\Academy.Domain.dll
 D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Domain\bin\Debug\net5.0\ref\Academy.Domain.dll
 D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Domain\bin\Debug\net5.0\Academy.Domain.pdb
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Domain\obj\Debug\net5.0\Academy.Domain.csproj.AssemblyReference.cache
 D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Domain\obj\Debug\net5.0\Academy.Domain.GeneratedMSBuildEditorConfig.editorconfig
 D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Domain\obj\Debug\net5.0\Academy.Domain.AssemblyInfoInputs.cache
 D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Domain\obj\Debug\net5.0\Academy.Domain.AssemblyInfo.cs
@@ -9,4 +10,3 @@ D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Domain\obj\Debug\net5.0\Academy.Domain.cs
 D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Domain\obj\Debug\net5.0\Academy.Domain.dll
 D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Domain\obj\Debug\net5.0\ref\Academy.Domain.dll
 D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Domain\obj\Debug\net5.0\Academy.Domain.pdb
-D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Domain\obj\Debug\net5.0\Academy.Domain.csproj.AssemblyReference.cache

@@ -7,36 +7,38 @@ namespace Academy.Infrastructure
 {
     public class CourseRepository : ICourseRepository
     {
-        public List<Course> Courses = new List<Course>
-        {
-            new Course(1, "tdd & bdd", true, 600, "Ehsan")
-        };
+        private readonly AcademyContext _context;
 
-        public void Create(Course course)
+        public CourseRepository(AcademyContext context)
         {
-            Courses.Add(course);
+            _context = context;
         }
 
         public List<Course> GetAll()
         {
-            return Courses;
+           return _context.Courses.ToList();
         }
 
-        public Course GetBy(int id)
+        public int Create(Course course)
         {
-            return Courses.FirstOrDefault(x=> x.Id == id);
+            _context.Courses.Add(course);
+            _context.SaveChanges();
+            return course.Id;
         }
 
         public void Delete(int id)
         {
-            var course = GetBy(id);
+            throw new NotImplementedException();
+        }
 
-            Courses.Remove(course);
+        public Course GetBy(int id)
+        {
+            throw new NotImplementedException();
         }
 
         public Course GetBy(string name)
         {
-            return Courses.FirstOrDefault(x=> x.Name == name);
+            throw new NotImplementedException();
         }
     }
 }

@@ -55,7 +55,12 @@
       "ProjectGuid": "eda00449-9bcf-4fff-9f5e-8ca848be5420",
       "DisplayName": "Academy.Application",
       "ColorIndex": 9
+    },
+    "2dd548cc-3b43-40b1-a431-7820ace06b7a": {
+      "ProjectGuid": "2dd548cc-3b43-40b1-a431-7820ace06b7a",
+      "DisplayName": "Academy.Infrasturcture.Tests.Integration",
+      "ColorIndex": 10
     }
   },
-  "NextColorIndex": 10
+  "NextColorIndex": 11
 }

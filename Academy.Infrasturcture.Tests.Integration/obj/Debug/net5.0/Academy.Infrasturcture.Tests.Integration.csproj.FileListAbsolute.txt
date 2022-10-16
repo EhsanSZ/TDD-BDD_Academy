@@ -1,0 +1,5 @@
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Infrasturcture.Tests.Integration\obj\Debug\net5.0\Academy.Infrasturcture.Tests.Integration.csproj.AssemblyReference.cache
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Infrasturcture.Tests.Integration\obj\Debug\net5.0\Academy.Infrasturcture.Tests.Integration.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Infrasturcture.Tests.Integration\obj\Debug\net5.0\Academy.Infrasturcture.Tests.Integration.AssemblyInfoInputs.cache
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Infrasturcture.Tests.Integration\obj\Debug\net5.0\Academy.Infrasturcture.Tests.Integration.AssemblyInfo.cs
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Infrasturcture.Tests.Integration\obj\Debug\net5.0\Academy.Infrasturcture.Tests.Integration.csproj.CoreCompileInputs.cache
