@@ -28,17 +28,19 @@ namespace Academy.Infrastructure
 
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            var course = _context.Courses.FirstOrDefault(x=> x.Id == id);
+            _context.Courses.Remove(course);
+            _context.SaveChanges();
         }
 
         public Course GetBy(int id)
         {
-            throw new NotImplementedException();
+           return _context.Courses.FirstOrDefault(x => x.Id == id);
         }
 
         public Course GetBy(string name)
         {
-            throw new NotImplementedException();
+            return _context.Courses.FirstOrDefault(x => x.Name == name);
         }
     }
 }

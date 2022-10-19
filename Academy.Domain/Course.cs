@@ -13,12 +13,11 @@ namespace Academy.Domain
         public string Instructor { get; set; }
         public List<Section> Sections { get; set; }
 
-        public Course(int id, string name, bool isOnline, double tuition, string instructor)
+        public Course(string name, bool isOnline, double tuition, string instructor)
         {
             GuardAgainstInvalidName(name);
             GuardAgainstInvalidTuition(tuition);
 
-            Id = id;
             Name = name;
             IsOnline = isOnline;
             Tuition = tuition;

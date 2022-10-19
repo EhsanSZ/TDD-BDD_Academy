@@ -52,13 +52,13 @@ namespace Academy.Application.Tests.Unit
         {
             //arrange
             var command = SomeCreateCourse();
+            _courseRepository.Create(default).ReturnsForAnyArgs(10);
 
             //act
             var actual = _courseService.Create(command);
 
             //assert
-            actual.Should().Be(command.Id);
-
+            actual.Should().BeGreaterThan(0);
         }
 
         [Fact]

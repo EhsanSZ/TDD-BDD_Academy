@@ -2,11 +2,6 @@
 using Academy.Infrastructure;
 using Academy.Infrastructure.Tests.Integration;
 using FluentAssertions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace Academy.Infrasturcture.Tests.Integration
@@ -42,13 +37,73 @@ namespace Academy.Infrasturcture.Tests.Integration
             var expected = _courseBuilder.Build();
 
             //act
-            var courseId = _repository.Create(expected);
+            _repository.Create(expected);
 
             //assert
-            courseId.Should().Be(expected.Id);
-
             var courses = _repository.GetAll();
             courses.Should().Contain(expected);
+
+        }
+
+        [Fact]
+        public void Should_ReturnIdOfTheCreatedCourse()
+        {
+            //arrange
+            var expected = _courseBuilder.Build();
+
+            //act
+            var Id = _repository.Create(expected);
+
+            //assert
+            Id.Should().BeGreaterThan(0);
+
+        }
+
+        [Fact]
+        public void Should_GetCourseByName()
+        {
+            //arrange
+            const string expectedName = "OnionArchitecture";
+            var expected = _courseBuilder.WithName(expectedName).Build();
+            _repository.Create(expected);
+
+            //act
+            var actual = _repository.GetBy(expectedName);
+
+            //assert
+            actual.Name.Should().Be(expectedName);
+            actual.Tuition.Should().Be(expected.Tuition);
+            actual.Instructor.Should().Be(expected.Instructor);
+        }
+
+        [Fact]
+        public void Should_DeleteExistingCourse()
+        {
+            //arrange
+            var course = _courseBuilder.Build();
+            int id = _repository.Create(course);
+
+            //act
+            _repository.Delete(id);
+
+            //assert
+            var actual = _repository.GetBy(id);
+            actual.Should().BeNull();
+        }
+
+
+        [Fact]
+        public void Should_GetCourseById()
+        {
+            //arrange
+            var expected = _courseBuilder.Build();
+            var Id = _repository.Create(expected);
+
+            //act
+            var actual = _repository.GetBy(Id);
+
+            //assert
+            actual.Should().Be(expected);
 
         }
 

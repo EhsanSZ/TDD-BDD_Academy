@@ -22,7 +22,6 @@ namespace Academy.Domain.Tests.Tests
         public void Constructor_ShouldConstructCourseProperly()
         {
             //var guid = IdentifierFixture.Id;
-            const int id = 1;
             const string name = "tdd & bdd";
             const bool isOnline = true;
             const double tuition = 600;
@@ -30,7 +29,6 @@ namespace Academy.Domain.Tests.Tests
 
             var course = courseTestBuilder.Build();
 
-            course.Id.Should().Be(id);
             course.Name.Should().Be(name);
             course.IsOnline.Should().Be(isOnline);
             course.Tuition.Should().Be(tuition);
@@ -70,6 +68,59 @@ namespace Academy.Domain.Tests.Tests
 
             //assert
             course.Sections.Should().ContainEquivalentOf(sectionToAdd);
+        }
+
+
+        [Fact]
+        public void Should_BeEqual_WhenIdIsEqual()
+        {
+            //arrange
+            const int sameId = 1;
+            var courseBuilder = new CourseTestBuilder();
+            var course1 = courseBuilder.Build();
+            course1.Id = sameId;
+            var course2 = courseBuilder.Build();
+            course2.Id = sameId;
+
+            //act
+            var actual = course1.Equals(course2);
+
+            //assert
+            actual.Should().BeTrue();
+            //course1.Should().Be(course2);
+        }
+
+
+        [Fact]
+        public void Should_NotBeEqual_WhenIdIsNotEqual()
+        {
+            //arrange
+            var courseBuilder = new CourseTestBuilder();
+            var course1 = courseBuilder.Build();
+            course1.Id = 1;
+            var course2 = courseBuilder.Build();
+            course2.Id = 2;
+
+            //act
+            var actual = course1.Equals(course2);
+
+            //assert
+            actual.Should().BeFalse();
+            //course1.Should().NotBe(course2);
+        }
+
+        [Fact]
+        public void Should_NotBeEqual_WhenIsNull()
+        {
+            //arrange
+            var courseBuilder = new CourseTestBuilder();
+            var course1 = courseBuilder.Build();
+
+            //act
+            var actual = course1.Equals(null);
+
+            //assert
+            actual.Should().BeFalse();
         }
 
 
