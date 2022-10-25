@@ -27,7 +27,7 @@ namespace Academy.Application
 
         }
 
-        public void Edit(EditCourse command)
+        public int Edit(EditCourse command)
         {
             if (_courseRepository.GetBy(command.Id) == null)
                 throw new CourseNotExistsException();
@@ -36,6 +36,7 @@ namespace Academy.Application
             var course = new Course(command.Name, command.IsOnline,
                 command.Tuition, command.Instructor);
             _courseRepository.Create(course);
+            return course.Id;
         }
 
         public void Delete(int id)
