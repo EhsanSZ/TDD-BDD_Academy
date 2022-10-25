@@ -13,12 +13,12 @@ namespace Academy.Infrastructure.Tests.Integration
         public RealDatabaseFixture()
         {
             var options = new DbContextOptionsBuilder<AcademyContext>()
-                .UseSqlServer("Data Source=.;Initial Catalog=TddAcademy;Integrated Security=True").Options;
+                .UseSqlServer("Data Source=.;Initial Catalog=TDDAcademy;Integrated Security=True").Options;
             Context = new AcademyContext(options);
 
             _scope = new TransactionScope();
-            var builder = new CourseTestBuilder();
 
+            var builder = new CourseTestBuilder();
             var asp = builder
                 .WithName("ASP.NET Core")
                 .WithTuition(750)

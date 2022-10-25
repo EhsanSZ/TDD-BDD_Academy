@@ -1,4 +1,5 @@
-﻿using Academy.Domain.Tests.Builders;
+﻿using Academy.Domain;
+using Academy.Domain.Tests.Builders;
 using Academy.Infrastructure;
 using Academy.Infrastructure.Tests.Integration;
 using FluentAssertions;
@@ -8,7 +9,7 @@ namespace Academy.Infrasturcture.Tests.Integration
 {
     public class CourseRepositoryTests : IClassFixture<RealDatabaseFixture>
     {
-        private readonly CourseRepository _repository;
+        private readonly ICourseRepository _repository;
         private readonly CourseTestBuilder _courseBuilder;
 
         public CourseRepositoryTests(RealDatabaseFixture databaseFixture)
@@ -63,7 +64,7 @@ namespace Academy.Infrasturcture.Tests.Integration
         public void Should_GetCourseByName()
         {
             //arrange
-            const string expectedName = "OnionArchitecture";
+            const string expectedName = "Blazor";
             var expected = _courseBuilder.WithName(expectedName).Build();
             _repository.Create(expected);
 
@@ -110,3 +111,4 @@ namespace Academy.Infrasturcture.Tests.Integration
 
     }
 }
+

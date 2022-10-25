@@ -153,3 +153,4 @@ D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Infrastructure.Tests.Unit\obj\Debug\net5.
 D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Infrastructure.Tests.Unit\obj\Debug\net5.0\ref\Academy.Infrastructure.Tests.Unit.dll
 D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Infrastructure.Tests.Unit\obj\Debug\net5.0\Academy.Infrastructure.Tests.Unit.pdb
 D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Infrastructure.Tests.Unit\obj\Debug\net5.0\Academy.Infrastructure.Tests.Unit.genruntimeconfig.cache
+D:\MyProje\ASP.Net\TDD\TDD BDD\Academy.Infrastructure.Tests.Unit\obj\Debug\net5.0\Academy.Infrastructure.Tests.Unit.csproj.AssemblyReference.cache

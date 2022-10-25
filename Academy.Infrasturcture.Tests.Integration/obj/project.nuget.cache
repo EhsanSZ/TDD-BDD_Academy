@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "QLgrduuPWJD1rYMWN4PfmwJzentnqIfvJK8QeOw96GOtdJobDBhP95L6EjaOgR6l5DqeLZvhPMtbQwb3nFhLkg==",
+  "dgSpecHash": "ndqspELtVb3EAouO+WlLUYF0lBdMmRrmxnVpFZTc0vBXk4k7m05CN9vD/idCgbACDi3zTDFruEBROCwy/dXcQg==",
   "success": true,
   "projectFilePath": "D:\\MyProje\\ASP.Net\\TDD\\TDD BDD\\Academy.Infrasturcture.Tests.Integration\\Academy.Infrasturcture.Tests.Integration.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Ehsan\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\Ehsan\\.nuget\\packages\\fluentassertions\\5.10.3\\fluentassertions.5.10.3.nupkg.sha512",
     "C:\\Users\\Ehsan\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",
     "C:\\Users\\Ehsan\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -143,7 +144,8 @@
     "C:\\Users\\Ehsan\\.nuget\\packages\\xunit.assert\\2.4.1\\xunit.assert.2.4.1.nupkg.sha512",
     "C:\\Users\\Ehsan\\.nuget\\packages\\xunit.core\\2.4.1\\xunit.core.2.4.1.nupkg.sha512",
     "C:\\Users\\Ehsan\\.nuget\\packages\\xunit.extensibility.core\\2.4.1\\xunit.extensibility.core.2.4.1.nupkg.sha512",
-    "C:\\Users\\Ehsan\\.nuget\\packages\\xunit.extensibility.execution\\2.4.1\\xunit.extensibility.execution.2.4.1.nupkg.sha512"
+    "C:\\Users\\Ehsan\\.nuget\\packages\\xunit.extensibility.execution\\2.4.1\\xunit.extensibility.execution.2.4.1.nupkg.sha512",
+    "C:\\Users\\Ehsan\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.3\\xunit.runner.visualstudio.2.4.3.nupkg.sha512"
   ],
   "logs": []
 }

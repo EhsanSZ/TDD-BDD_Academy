@@ -22,7 +22,7 @@ namespace Academy.Domain.Tests.Tests
         public void Constructor_ShouldConstructCourseProperly()
         {
             //var guid = IdentifierFixture.Id;
-            const string name = "tdd & bdd";
+            const string name = "ASP";
             const bool isOnline = true;
             const double tuition = 600;
             const string instructor = "Ehsan";

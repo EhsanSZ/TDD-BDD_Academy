@@ -2,7 +2,7 @@
 {
     public class CourseTestBuilder
     {
-        private string _name = "tdd & bdd";
+        private string _name = "ASP";
         private const bool IsOnline = true;
         private double _tuition = 600;
         private string _Instructor = "Ehsan";

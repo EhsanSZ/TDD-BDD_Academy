@@ -96,7 +96,6 @@ namespace Academy.Application.Tests.Unit
             });
         }
 
-
         [Fact]
         public void Should_ThrowException_WhenUpdatingCourseNotExists()
         {
@@ -119,7 +118,7 @@ namespace Academy.Application.Tests.Unit
                 Id = 12,
                 IsOnline = true,
                 Instructor = Name.FullName(),
-                Name = "ASP",
+                Name = "ASP.Net MVC",
                 Tuition = 200
             };
         }
