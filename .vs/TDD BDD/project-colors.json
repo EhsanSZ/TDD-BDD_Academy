@@ -60,7 +60,27 @@
       "ProjectGuid": "2dd548cc-3b43-40b1-a431-7820ace06b7a",
       "DisplayName": "Academy.Infrasturcture.Tests.Integration",
       "ColorIndex": 10
+    },
+    "2e4e7f1c-44a0-4885-b1b0-f0b91e2dc9b6": {
+      "ProjectGuid": "2e4e7f1c-44a0-4885-b1b0-f0b91e2dc9b6",
+      "DisplayName": "Academy.Presentation.Tests.Unit",
+      "ColorIndex": 11
+    },
+    "484403aa-081d-4d71-9713-cf009e9fa5e1": {
+      "ProjectGuid": "484403aa-081d-4d71-9713-cf009e9fa5e1",
+      "DisplayName": "Academy.Infrasturcture.Tests.Integration",
+      "ColorIndex": 12
+    },
+    "6c689df2-c773-469b-9a78-50a8c0a1d601": {
+      "ProjectGuid": "6c689df2-c773-469b-9a78-50a8c0a1d601",
+      "DisplayName": "Academy.Presentation",
+      "ColorIndex": 13
+    },
+    "0520b066-ed1c-4793-8fc4-b72654430790": {
+      "ProjectGuid": "0520b066-ed1c-4793-8fc4-b72654430790",
+      "DisplayName": "Academy.Presentation.Tests.Integration",
+      "ColorIndex": 14
     }
   },
-  "NextColorIndex": 11
+  "NextColorIndex": 15
 }

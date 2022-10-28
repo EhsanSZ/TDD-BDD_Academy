@@ -97,6 +97,22 @@ namespace Academy.Application.Tests.Unit
         }
 
         [Fact]
+        public void Should_ReturnIdOfUpdatedRecord()
+        {
+            //arrange
+            var command = SomeEditCourse();
+            _courseRepository.Create(default).ReturnsForAnyArgs(10);
+            var course = _courseTestBuilder.Build();
+            _courseRepository.GetBy(Arg.Any<int>()).Returns(course);
+
+            //act
+            var actual = _courseService.Edit(command);
+
+            //assert
+            actual.Should().BeGreaterThan(0);
+        }
+
+        [Fact]
         public void Should_ThrowException_WhenUpdatingCourseNotExists()
         {
             //arrange

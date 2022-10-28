@@ -33,10 +33,8 @@ namespace Academy.Application
                 throw new CourseNotExistsException();
 
             _courseRepository.Delete(command.Id);
-            var course = new Course(command.Name, command.IsOnline,
-                command.Tuition, command.Instructor);
-            _courseRepository.Create(course);
-            return course.Id;
+            var course = new Course(command.Name, command.IsOnline,command.Tuition, command.Instructor);
+            return _courseRepository.Create(course);
         }
 
         public void Delete(int id)
