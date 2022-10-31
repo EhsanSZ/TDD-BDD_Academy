@@ -13,7 +13,7 @@ namespace Academy.Infrastructure.Tests.Integration
         public RealDatabaseFixture()
         {
             var options = new DbContextOptionsBuilder<AcademyContext>()
-                .UseSqlServer("Data Source=.;Initial Catalog=TDDAcademy;Integrated Security=True").Options;
+                .UseSqlServer("Data Source=.;Initial Catalog=MTDDAcademy;Integrated Security=True").Options;
             Context = new AcademyContext(options);
 
             _scope = new TransactionScope();
@@ -45,9 +45,11 @@ namespace Academy.Infrastructure.Tests.Integration
         {
             _scope.Dispose();
             Context.Database.ExecuteSqlRaw("truncate table [TddAcademy].[dbo].[Courses]");
-            Context.Database.ExecuteSqlRaw("truncate table [TddAcademy].[dbo].[Sections]");
             Context.SaveChanges();
             Context.Dispose();
+
         }
     }
 }
+
+

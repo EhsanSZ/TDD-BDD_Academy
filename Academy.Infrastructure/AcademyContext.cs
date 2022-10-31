@@ -6,6 +6,7 @@ namespace Academy.Infrastructure
     public class AcademyContext : DbContext
     {
         public DbSet<Course> Courses { get; set; }
+        public DbSet<Section> Sections { get; set; }
 
         public AcademyContext(DbContextOptions<AcademyContext> options) : base(options)
         {
