@@ -1,4 +1,0 @@
-D:\MyProje\ASP.Net\TDD\TDD BDD\.vs\TDD BDD\v17\lut\0\b\Academy.Domain.Tests\Debug\net5.0\CoverletSourceRootsMapping
-D:\MyProje\ASP.Net\TDD\TDD BDD\.vs\TDD BDD\v17\lut\0\i\Academy.Domain.Tests\Debug\net5.0\Academy.Domain.Tests.GeneratedMSBuildEditorConfig.editorconfig
-D:\MyProje\ASP.Net\TDD\TDD BDD\.vs\TDD BDD\v17\lut\0\i\Academy.Domain.Tests\Debug\net5.0\Academy.Domain.Tests.AssemblyInfoInputs.cache
-D:\MyProje\ASP.Net\TDD\TDD BDD\.vs\TDD BDD\v17\lut\0\i\Academy.Domain.Tests\Debug\net5.0\Academy.Domain.Tests.AssemblyInfo.cs
